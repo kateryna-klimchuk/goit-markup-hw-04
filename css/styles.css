@@ -5,6 +5,8 @@
     --blue-accent: #2196F3;
     --footer-mail-tel-color: rgba(255, 255, 255, 0.6);
     --main-background-color: #2F303A;
+    --client-logo-normal: #AFB1B8;
+    --client-logo-accent: #2196F3;
 }
 
 body {
@@ -334,10 +336,19 @@ img {
     padding: 0;
 }
 .client-icon {
-    border: 1px solid #2196F3;
+    border: 1px solid var(--client-logo-normal);
     margin-right: 30px;
     width: 170px;
     height: 72px ;
+    padding: 16px 32px;
+    fill: var(--client-logo-normal);
+    border-radius: 4px;
+}
+
+.client-icon:hover,
+.client-icon:focus {
+    fill: var(--client-logo-accent);
+    border-color: var(--client-logo-accent);
 }
 
 
