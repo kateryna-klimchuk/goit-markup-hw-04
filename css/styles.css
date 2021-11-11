@@ -233,21 +233,22 @@ h1, h2, h3, h4, h5, h6, p {
     padding: 0;
 }
 
+.icon-div {
+    display: flex;
+    background: #F5F4FA;
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+    padding: 25px 100px;
+}
 
 .icon {
     display: flex;
-    width: 270px;
-    height: 120px;
-    background-color: #F5F4FA;
-    border-radius: 4px;
-    padding: 25px 100px;
     align-items: center;
     justify-content: center;
 }
-.icon-diagram {
-    align-items: center;
-    justify-content: center;
-}
+
+
 
 /* what we do */
 
@@ -404,11 +405,15 @@ img {
 .footer .logo {
     color: var(--main-white);
 }
+.logo {
+    display: block;
+    margin-bottom: 20px;
+}
+
 .footer-address {
     list-style: none;
     text-decoration: none;
     margin: 0;
-    margin-top: 20px;
     padding: 0;
 }
 .footer-address .item:not(:first-child) {
@@ -442,7 +447,6 @@ img {
     display: block;
     margin: 0;
     padding: 0;
-    /* margin-left: 215px; */
 }
 
 .footer .conteiner {
@@ -578,16 +582,13 @@ img {
 .our-project {
     display: flex;
     flex-wrap: wrap;
-    border: none;
-
 }
 .our-project .item {
-    border: none;
     margin-right: 30px;
     margin-bottom: 30px;
     border: 1px solid rgba(238, 238, 238, 1);
     background: #FFFFFF;
-    width: 370px;
+    flex-basis: calc(100% / 3 - 30px);
 }
 .our-project .item:nth-child(3n) {
     margin-right: 0;
